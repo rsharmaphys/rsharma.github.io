@@ -160,10 +160,10 @@
                         url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
-        }*/
+        }
         .publications {
             background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15));
-        }
+        }*/
         
         .image-credit {
             position: absolute;
@@ -426,23 +426,27 @@
 
         /* Publications */
         .publication-item {
-            background-color: rgba(255,255,255, 0.1);
+            background-color: rgba(41, 76, 120, 0.1);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
             backdrop-filter: blur(5px);
         }
+        
+        .publication-item:hover {
+            background-color: rgba(41, 76, 120, 0.2);
+        }
 
         .pub-title {
             font-weight: 600;
             margin-bottom: 10px;
-            color: white;
+            color: var(--secondary-color);
         }
 
         .pub-authors {
             font-style: italic;
             margin-bottom: 10px;
-            color: rgba(255, 255, 255, 0.8);
+            color: var(--primary-color);
         }
 
         .pub-journal {
@@ -452,7 +456,7 @@
 
         .pub-year {
             float: right;
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 0, 0.7);
         }
 
         .pub-links {
@@ -464,14 +468,14 @@
             margin-right: 15px;
             font-size: 0.9rem;
             color: var(--secondary-color);
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(41, 76, 120, 0.1);
             padding: 5px 10px;
             border-radius: 4px;
             transition: var(--transition);
         }
 
         .pub-links a:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(41, 76, 120, 0.2);
             color: white;
         }
 
@@ -480,14 +484,14 @@
         }
 
         .profile-links .btn-outline {
-            border-color: white;
-            color: white;
+            border-color: rgba(41, 76, 120, 0.2);
+            color: var(--secondary-color);
             background: transparent;
         }
 
         .profile-links .btn-outline:hover {
-            background: white;
-            color: var(--secondary-color);
+            background: rgba(41, 76, 120, 0.5);
+            color: white;
         }
 
         /* Skills */
@@ -701,7 +705,7 @@
             <h1>Dr. Rahul Sharma</h1>
             <p>X-ray Astronomer & Astrophysicist<br>Post-Doctoral Fellow at Inter-University Centre for Astronomy and Astrophysics (IUCAA)</p>
             <div class="hero-btns">
-                <a href="#research" class="btn">Research Interests</a>
+                <a href="#research" class="btn btn-outline">Research Interests</a>
                 <a href="#publications" class="btn btn-outline">View Publications</a>
             </div>
         </div>
@@ -779,7 +783,7 @@
     </section>
 
     <!-- Publications -->
-<section id="publications" class="publications bg-section">
+<section id="publications" class="publications">
     <div class="container">
         <h2>Selected Publications</h2>
         
