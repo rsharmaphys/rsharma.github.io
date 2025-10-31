@@ -144,22 +144,22 @@
 
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
+                        url('https://chandra.harvard.edu/photo/2018/crab/crab_w22.jpg');
             background-size: cover;
             background-position: center;
         }
 
         .research {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))/*, 
                         url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
+            background-size: cover*/;
             background-position: center;
         }
 
         .publications {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))/*, 
                         url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
+            background-size: cover*/;
             background-position: center;
         }
 
@@ -453,6 +453,41 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
+        .pub-links {
+            margin-top: 10px;
+        }
+
+        .pub-links a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .pub-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .pub-links a i {
+            margin-right: 5px;
+        }
+
+        .profile-links .btn-outline {
+            border-color: white;
+            color: white;
+            background: transparent;
+        }
+
+        .profile-links .btn-outline:hover {
+            background: white;
+            color: var(--secondary-color);
+        }
+
         /* Skills */
         .skills-container {
             display: grid;
@@ -667,7 +702,7 @@
                 <a href="#publications" class="btn btn-outline">View Publications</a>
             </div>
         </div>
-        <div class="image-credit">Background: NASA/Unsplash</div>
+        <div class="image-credit">Background: NASA/CXO</div>
     </section>
 
     <!-- About Section -->
@@ -683,33 +718,6 @@
                     <h3>X-ray Astronomy Researcher</h3>
                     <p>I am a Post-Doctoral Fellow at the Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune, specializing in X-ray astronomy and high-energy astrophysics. My research focuses on X-ray binaries, neutron stars, black holes, and X-ray polarization.</p>
                     <p>My work involves analyzing data from space-based observatories like AstroSAT, XMM-Newton, NuSTAR, and Chandra to understand the physics of compact objects and their environments.</p>
-                    
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <p>108, IUCAA, Pune University Campus, Pune 410007, INDIA</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <p>rahul1607kumar@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <p>rahul.sharma@iucaa.in</p>
-                            </div>
-                        </div>
-                    </div>
                     
                     <a href="src/0cv-main.pdf" class="btn" target="_blank" style="margin-top: 20px;">Download CV</a>
                 </div>
@@ -768,50 +776,90 @@
     </section>
 
     <!-- Publications -->
-    <section id="publications" class="publications bg-section">
-        <div class="container">
-            <h2>Selected Publications</h2>
-            
-            <div class="publication-item">
-                <div class="pub-title">Intriguing nature of AM Her-type candidate CXOU J204734.8+300105</div>
-                <div class="pub-authors">R. Sharma, C. Jain, B. Paul, A. Dutta, and V. Rana</div>
-                <div class="pub-journal">The Astrophysical Journal 987, 117 (2025)</div>
-                <div class="pub-year">2025</div>
-            </div>
-            
-            <div class="publication-item">
-                <div class="pub-title">Broadband spectral and emission geometry analysis of XB 1916–053 with Chandra and NuSTAR</div>
-                <div class="pub-authors">R. Sharma</div>
-                <div class="pub-journal">Journal of High Energy Astrophysics 47, 100376 (2025)</div>
-                <div class="pub-year">2025</div>
-            </div>
-            
-            <div class="publication-item">
-                <div class="pub-title">Sidebands to mHz QPOs in 4U 1626–67 in the second spin-down state</div>
-                <div class="pub-authors">R. Sharma, C. Jain, B. Paul, and A. Beri</div>
-                <div class="pub-journal">MNRAS 538, 1046–1054 (2025)</div>
-                <div class="pub-year">2025</div>
-            </div>
-            
-            <div class="publication-item">
-                <div class="pub-title">Probing the energy and luminosity-dependent spectro-timing properties of RX J0440.9+4431 with AstroSat</div>
-                <div class="pub-authors">R. Sharma, M. Mandal, S. Pal, B. Paul, G. K. Jaisawal, and A. Ratheesh</div>
-                <div class="pub-journal">MNRAS 534, 1028–1042 (2024)</div>
-                <div class="pub-year">2024</div>
-            </div>
-            
-            <div class="publication-item">
-                <div class="pub-title">AstroSat observation of the magnetar SGR J1830-0645 during its first detected X-ray outburst</div>
-                <div class="pub-authors">R. Sharma, C. Jain, B. Paul, and T. R. Seshadri</div>
-                <div class="pub-journal">MNRAS 526, 4877–4884 (2023)</div>
-                <div class="pub-year">2023</div>
-            </div>
-            
-            <a href="#" class="btn" style="margin-top: 30px; display: inline-block;">View All Publications</a>
+<section id="publications" class="publications bg-section">
+    <div class="container">
+        <h2>Selected Publications</h2>
+        
+        <!-- Profile Links -->
+        <div class="profile-links" style="text-align: center; margin-bottom: 40px;">
+            <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="btn btn-outline" style="margin: 5px;">
+                <i class="fab fa-orcid"></i> ORCID
+            </a>
+            <a href="https://ui.adsabs.harvard.edu/" target="_blank" class="btn btn-outline" style="margin: 5px;">
+                <i class="fas fa-database"></i> NASA/ADS
+            </a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=0000000000" target="_blank" class="btn btn-outline" style="margin: 5px;">
+                <i class="fas fa-book"></i> Scopus
+            </a>
+            <a href="https://scholar.google.com/citations?user=USER_ID" target="_blank" class="btn btn-outline" style="margin: 5px;">
+                <i class="fas fa-graduation-cap"></i> Google Scholar
+            </a>
         </div>
-        <div class="image-credit">Background: NASA/Unsplash</div>
-    </section>
-
+        
+        <!-- Publication Items -->
+        <div class="publication-item">
+            <div class="pub-title">Intriguing nature of AM Her-type candidate CXOU J204734.8+300105</div>
+            <div class="pub-authors">R. Sharma, C. Jain, B. Paul, A. Dutta, and V. Rana</div>
+            <div class="pub-journal">The Astrophysical Journal 987, 117 (2025)</div>
+            <div class="pub-links">
+                <a href="https://doi.org/10.3847/1538-4357/xxx" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...987..117S" target="_blank"><i class="fas fa-database"></i> ADS</a>
+                <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+            </div>
+            <div class="pub-year">2025</div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="pub-title">Broadband spectral and emission geometry analysis of XB 1916–053 with Chandra and NuSTAR</div>
+            <div class="pub-authors">R. Sharma</div>
+            <div class="pub-journal">Journal of High Energy Astrophysics 47, 100376 (2025)</div>
+            <div class="pub-links">
+                <a href="https://doi.org/10.1016/j.jheap.2025.100376" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://ui.adsabs.harvard.edu/abs/2025JHEAp..4700376S" target="_blank"><i class="fas fa-database"></i> ADS</a>
+            </div>
+            <div class="pub-year">2025</div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="pub-title">Sidebands to mHz QPOs in 4U 1626–67 in the second spin-down state</div>
+            <div class="pub-authors">R. Sharma, C. Jain, B. Paul, and A. Beri</div>
+            <div class="pub-journal">MNRAS 538, 1046–1054 (2025)</div>
+            <div class="pub-links">
+                <a href="https://doi.org/10.1093/mnras/stae000" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.538.1046S" target="_blank"><i class="fas fa-database"></i> ADS</a>
+                <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+            </div>
+            <div class="pub-year">2025</div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="pub-title">Probing the energy and luminosity-dependent spectro-timing properties of RX J0440.9+4431 with AstroSat</div>
+            <div class="pub-authors">R. Sharma, M. Mandal, S. Pal, B. Paul, G. K. Jaisawal, and A. Ratheesh</div>
+            <div class="pub-journal">MNRAS 534, 1028–1042 (2024)</div>
+            <div class="pub-links">
+                <a href="https://doi.org/10.1093/mnras/stae000" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.534.1028S" target="_blank"><i class="fas fa-database"></i> ADS</a>
+            </div>
+            <div class="pub-year">2024</div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="pub-title">AstroSat observation of the magnetar SGR J1830-0645 during its first detected X-ray outburst</div>
+            <div class="pub-authors">R. Sharma, C. Jain, B. Paul, and T. R. Seshadri</div>
+            <div class="pub-journal">MNRAS 526, 4877–4884 (2023)</div>
+            <div class="pub-links">
+                <a href="https://doi.org/10.1093/mnras/stad000" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.4877S" target="_blank"><i class="fas fa-database"></i> ADS</a>
+                <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+            </div>
+            <div class="pub-year">2023</div>
+        </div>
+        
+        <a href="#" class="btn" style="margin-top: 30px; display: inline-block;">View All Publications</a>
+    </div>
+    <div class="image-credit">Background: NASA/Unsplash</div>
+</section>
+    
     <!-- Education & Employment -->
     <section id="education" class="education">
         <div class="container">
