@@ -533,6 +533,51 @@
             background: rgba(41, 76, 120, 0.5);
             color: white;
         }
+        
+        /* Posters Section */
+.posters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.poster-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.poster-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.poster-preview {
+    height: 200px;
+    overflow: hidden;
+}
+
+.poster-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster-info {
+    padding: 20px;
+}
+
+.poster-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.poster-info p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
 
         /* Skills */
         .skills-container {
@@ -751,6 +796,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#research">Research</a></li>
                     <li><a href="#publications">Publications</a></li>
+                    <li><a href="#posters">Posters</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -977,6 +1023,68 @@
         </div>
         
         <a href="https://ui.adsabs.harvard.edu/user/libraries/Pc7ofWEzT_2kALSn9W8MIQ" class="btn" style="margin-top: 30px; display: inline-block;">View All Publications</a>
+    </div>
+</section>
+
+
+<!-- Science Posters -->
+<section id="posters" class="posters">
+    <div class="container">
+        <h2>Science Posters</h2>
+        <div class="posters-grid">           
+            <div class="poster-card">
+                <div class="poster-preview">
+                    <iframe src="src/cxou.pdf#view=fitH" width="100%" height="200"></iframe>
+                </div>
+                <div class="poster-info">
+                    <h3>Magnetic CV Research</h3>
+                    <p>Presented at STELLAR VARIABILITY 2025, IUCAA, Pune</p>
+                    <a href="src/cxou.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+            
+            <div class="poster-card">
+                <div class="poster-preview">
+                    <iframe src="src/lmcx4.pdf#view=fitH" width="100%" height="200"></iframe>
+                </div>
+                <div class="poster-info">
+                    <h3>X-ray Pulsar Research</h3>
+                    <p>Presented at X-ray Universe 2023 Symposium, Athens, Greece</p>
+                    <a href="src/lmcx4.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+            
+            <div class="poster-card">
+                <div class="poster-preview">
+                    <iframe src="src/ASI_2018.pdf#view=fitH" width="100%" height="200"></iframe>
+                </div>
+                <div class="poster-info">
+                    <h3>Neutron Star X-ray Binary Research</h3>
+                    <p>Presented at 36th Meeting of Astronomical Society of India (ASI 2018), Osmania University, Hyderabad</p>
+                    <a href="src/ASI_2018.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div> 
+            
+            <div class="poster-card">
+                <div class="poster-preview">
+                    <iframe src="src/ASI_2017.pdf#view=fitH" width="100%" height="200"></iframe>
+                </div>
+                <div class="poster-info">
+                    <h3>Neutron Star X-ray Binary Research</h3>
+                    <p>Presented at 35th Meeting of Astronomical Society of India (ASI 2017), Birla Institute of Scientific Research (BISR), Jaipur</p>
+                    <a href="src/ASI_2017.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>            
+                     
+        </div>
     </div>
 </section>
     
