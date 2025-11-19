@@ -579,6 +579,60 @@
     margin-bottom: 15px;
 }
 
+/* Research Highlights */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.highlight-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlight-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.highlight-card ul {
+    list-style: none;
+}
+
+.highlight-card li {
+    margin-bottom: 12px;
+    padding-left: 0;
+}
+
+.highlight-card a {
+    color: var(--text-color);
+    transition: var(--transition);
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.highlight-card a:hover {
+    color: var(--secondary-color);
+    background: var(--light-color);
+}
+
         /* Skills */
         .skills-container {
             display: grid;
@@ -797,6 +851,7 @@
                     <li><a href="#research">Research</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#posters">Posters</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -964,14 +1019,25 @@
         </div>
         
         <!-- Publication Items -->
+        
+        <div class="publication-item">
+            <div class="pub-title">Probing accretion dynamics and spin evolution in the X-ray pulsar RX J0520.5–6932 during its 2024 outburst</div>
+            <div class="pub-authors">R. Sharma, A. Beri, B. Paul, A. Sanna, C. Maitra, and H. Yang</div>
+            <div class="pub-journal">Astronomy & Astrophysics, In press (2025)</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/abs/2511.14429" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+            </div>
+            <div class="pub-year">2025</div>
+        </div>
+        
         <div class="publication-item">
             <div class="pub-title">Intriguing nature of AM Her-type candidate CXOU J204734.8+300105</div>
             <div class="pub-authors">R. Sharma, C. Jain, B. Paul, A. Dutta, and V. Rana</div>
             <div class="pub-journal">The Astrophysical Journal 987, 117 (2025)</div>
             <div class="pub-links">
-                <a href="https://doi.org/10.3847/1538-4357/xxx" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://doi.org/10.3847/1538-4357/addc5b" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
                 <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...987..117S" target="_blank"><i class="fas fa-database"></i> ADS</a>
-                <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+                <a href="https://arxiv.org/abs/2505.11322" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
             </div>
             <div class="pub-year">2025</div>
         </div>
@@ -992,9 +1058,9 @@
             <div class="pub-authors">R. Sharma, C. Jain, B. Paul, and A. Beri</div>
             <div class="pub-journal">MNRAS 538, 1046–1054 (2025)</div>
             <div class="pub-links">
-                <a href="https://doi.org/10.1093/mnras/stae000" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://doi.org/10.1093/mnras/staf379" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
                 <a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.538.1046S" target="_blank"><i class="fas fa-database"></i> ADS</a>
-                <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+                <a href="https://arxiv.org/abs/2503.05444" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
             </div>
             <div class="pub-year">2025</div>
         </div>
@@ -1004,8 +1070,9 @@
             <div class="pub-authors">R. Sharma, M. Mandal, S. Pal, B. Paul, G. K. Jaisawal, and A. Ratheesh</div>
             <div class="pub-journal">MNRAS 534, 1028–1042 (2024)</div>
             <div class="pub-links">
-                <a href="https://doi.org/10.1093/mnras/stae000" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://doi.org/10.1093/mnras/stae2175" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
                 <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.534.1028S" target="_blank"><i class="fas fa-database"></i> ADS</a>
+                <a href="https://arxiv.org/abs/2409.11121" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
             </div>
             <div class="pub-year">2024</div>
         </div>
@@ -1015,9 +1082,9 @@
             <div class="pub-authors">R. Sharma, C. Jain, B. Paul, and T. R. Seshadri</div>
             <div class="pub-journal">MNRAS 526, 4877–4884 (2023)</div>
             <div class="pub-links">
-                <a href="https://doi.org/10.1093/mnras/stad000" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                <a href="https://doi.org/10.1093/mnras/stad3026" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
                 <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.4877S" target="_blank"><i class="fas fa-database"></i> ADS</a>
-                <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+                <a href="https://arxiv.org/abs/2310.04079" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
             </div>
             <div class="pub-year">2023</div>
         </div>
@@ -1087,6 +1154,59 @@
         </div>
     </div>
 </section>
+
+
+<!-- Research Highlights -->
+<section id="highlights" class="highlights">
+    <div class="container">
+        <h2>Research Highlights</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3>Press Coverage</h3>
+                <ul>
+                    <li><a href="https://dst.gov.in/coherent-pulsation-measured-high-energy-luminous-binary-star-system-cloud-orbiting-milky-way-can" target="_blank">DST Press Release - X-ray Pulsar</a></li>
+                    <li><a href="https://dst.gov.in/milli-second-burst-detected-astrosat-new-high-magnetic-field-neutron-star-can-help-understand-such" target="_blank">DST Press Release - Magnetar milisecond Bursts</a></li>
+ 
+                     <li><a href="https://heasarc.gsfc.nasa.gov/docs/nicer/science_nuggets/20240404.html" target="_blank">NICER Science Nuggets</a></li>
+                    <li><a href="https://phys.org/news/2022-12-explore-properties-x-ray-binary-lmc.html" target="_blank">Phys.org - X-ray Binary Properties</a></li>
+                    <li><a href="https://phys.org/news/2023-10-magnetar-sgr-j18300645-astrosat.html" target="_blank">Phys.org - Magnetar milisecond Bursts</a></li>
+                                                       
+                </ul>
+            </div>
+            
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Media & Outreach</h3>
+                <ul>
+                    <li><a href="https://www.thehindu.com/sci-tech/science/eclipses-of-binary-star-shed-light-on-orbiting-explanet/article17757774.ece" target="_blank">The Hindu - Circumbinary Planet discovery</a></li>
+                    <li><a href="https://timesofindia.indiatimes.com/india/astrosat-detects-unique-neutron-stars-milli-seconds-bursts/articleshow/106209052.cms" target="_blank">Times of India - Magnetar milisecond Bursts</a></li>
+                    
+                    <li><a href="https://government.economictimes.indiatimes.com/news/technology/milli-second-burst-detected-by-astrosat-to-help-understand-stellar-entities/106282252" target="_blank"> Economics Times - Magnetar milisecond Bursts</a></li>
+                    
+                   <li><a href="https://www.wionews.com/science/astrosat-detects-millisecond-bursts-from-new-magnetar-to-unveil-concealed-secrets-within-673435" target="_blank">WION News - Magnetar milisecond Bursts</a></li>
+                </ul>
+            </div>
+            
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-satellite"></i>
+                </div>
+                <h3>Data & Tools</h3>
+                <ul>
+                    <li><a href="https://github.com/rsharmaphys/" target="_blank">Astronomy Analysis Scripts</a></li>
+                    <li><a href="https://github.com/rsharmaphys/" target="_blank">X-ray Data Pipelines</a></li>
+                    <li><a href="https://github.com/rsharmaphys/" target="_blank">Research Tools Repository</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
     
     <!-- Education & Employment -->
     <section id="education" class="education">
@@ -1246,8 +1366,9 @@
                         <ul>
                             <li><a href="src/0cv-main.pdf" target="_blank">CV/Resume</a></li>
                             <li><a href="#publications">Publications</a></li>
-                            <li><a href="#research">Research</a></li>
-                            <li><a href="#">Presentations</a></li>
+                            <li><a href="#research">Research Interest</a></li>
+                            <li><a href="#highlights">Research Highlights</a></li>
+                            <li><a href="#posters">Presentations</a></li>
                         </ul>
                     </div>
                 </div>
